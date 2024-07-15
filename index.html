@@ -1,0 +1,47 @@
+
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+    
+   
+<body>
+    <div class="calculator">
+        <input id="txtInput" type="text" readonly/>
+        <div class="row">
+            <input value="7" class="button" type="button" onclick="Calculator.WriteText(this)"/>
+            <input value="8" class="button" type="button" onclick="Calculator.WriteText(this)"/>
+            <input value="9" class="button" type="button" onclick="Calculator.WriteText(this)"/>
+            <input value="/" class="button operator" type="button" onclick="Calculator.OperatorClick('4')"/>
+        </div>
+        <div class="row">
+            <input value="4" class="button" type="button" onclick="Calculator.WriteText(this)"/>
+            <input value="5" class="button" type="button" onclick="Calculator.WriteText(this)"/>
+            <input value="6" class="button" type="button" onclick="Calculator.WriteText(this)"/>
+            <input value="*" class="button operator" type="button" onclick="Calculator.OperatorClick('3')"/>
+        </div>
+        <div class="row">
+            <input value="1" class="button" type="button" onclick="Calculator.WriteText(this)"/>
+            <input value="2" class="button" type="button" onclick="Calculator.WriteText(this)"/>
+            <input value="3" class="button" type="button" onclick="Calculator.WriteText(this)"/>
+            <input value="-" class="button operator" type="button" onclick="Calculator.OperatorClick('2')"/>
+        </div>
+        <div class="row">
+            <input value="0" class="button" type="button" onclick="Calculator.WriteText(this)"/>
+            <input value="." class="button" type="button" onclick="Calculator.WriteText(this)"/>
+            <input value="=" class="button equal" type="button" onclick="Calculator.Calculation()"/>
+            <input value="+" class="button operator" type="button" onclick="Calculator.OperatorClick('1')"/>
+        </div>
+        <div class="row">
+            <input value="Clear" class="button clear" type="button" onclick="Calculator.ClearData()"/>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
